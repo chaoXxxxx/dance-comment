@@ -3,12 +3,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const random_1 = __importDefault(require("./template/random"));
+const default_1 = __importDefault(require("./template/default"));
 class CreateCmment {
     constructor(option) {
         this.orderNumber = -1;
         this.cList = [];
-        this.list = random_1.default;
+        this.list = default_1.default;
         this.config = {
             time: 10000,
             useTemplate: true,
@@ -23,11 +23,11 @@ class CreateCmment {
     }
     init() {
         this.create();
-        if (this.config.time) {
+        if (this.config.time && this.config.time >= 100) {
             setInterval(() => {
                 this.clear();
                 this.create();
-            }, isNaN(this.config.time) ? 10000 : this.config.time < 1000 ? 1000 : this.config.time);
+            }, this.config.time);
         }
     }
     clear() {
@@ -36,7 +36,7 @@ class CreateCmment {
         });
     }
     create() {
-        const getRandom = this.random(0, this.list.length - 1);
+        const getRandom = this.getNumber();
         const commList = this.list[getRandom];
         const cList = [];
         commList.forEach(item => {

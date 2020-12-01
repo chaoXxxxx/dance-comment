@@ -43,7 +43,7 @@ class CreateCmment {
   }
 
   create ():void {
-    const getRandom: number = this.random(0, this.list.length - 1)
+    const getRandom: number = this.getNumber()
     const commList: [] = this.list[getRandom]
     const cList: any[] = []
     commList.forEach(item => {

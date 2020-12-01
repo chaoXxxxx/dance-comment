@@ -2,19 +2,8 @@
 
 <h1 align="center">dance-comment</h1>
 
-
-- 拉取项目代码
-```
-git clone https://github.com/chaoXxxxx/dance-comment.git
-or
-git clone https://gitee.com/ChaoXxxx/dance-comment.git
-```
-
-- 编译项目
-```
-tsc
-```
-
+- 例子 (default)
+![avatar](/image/default.gif)
 - 使用
 ```
 import DanceComment from 'dance-comment'
@@ -24,12 +13,30 @@ new DanceComment().init()
 ```
 ```
 const config = {
-  time: 10000,
+  time: 1000,
   useTemplate: true,
-  orderPlay: true,
-  template: []
+  orderPlay: false
 }
+new DanceComment(config).init()
+```
 
+
+- 例子 (javascript)
+![avatar](/image/javascript.gif)
+- 使用
+```
+import DanceComment from 'dance-comment'
+import javascript from 'dance-comment/template/javascript'
+```
+```
+new DanceComment().init()
+```
+```
+const config = {
+  time: 200,
+  useTemplate: false,
+  template: javascript
+}
 new DanceComment(config).init()
 ```
 
