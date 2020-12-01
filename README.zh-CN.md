@@ -26,10 +26,7 @@ new DanceComment(config).init()
 - 使用
 ```
 import DanceComment from 'dance-comment'
-import javascript from 'dance-comment/template/javascript'
-```
-```
-new DanceComment().init()
+import javascript from 'dance-comment/dist/template/javascript'
 ```
 ```
 const config = {
