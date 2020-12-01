@@ -1,0 +1,20 @@
+{
+  "name": "dance-comment",
+  "version": "1.0.0",
+  "private": false,
+  "description": "danceComment Let code be dance",
+  "keywords": ["dance", "code", "create-comment", "html", "javascript", "typescript", "创建注释图像", "代码跳动"],
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "chaoXxxx",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/ChaoXxxx/suspension-ball.git"
+  }
+}
