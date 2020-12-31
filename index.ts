@@ -1,6 +1,6 @@
 import random from './template/default'
 
-class CreateCmment {
+class DanceComment {
   orderNumber: number = -1
   cList: any[] = []
   list: any[] = random
@@ -97,4 +97,4 @@ class CreateCmment {
   }
 }
 
-export default CreateCmment
+export default DanceComment
